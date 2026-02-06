@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Danh Muc Mon Hoc</h2>
+    <h3>Hoc Ki I</h3>
+    <p>Tieng Anh</p>
+    <p>Tin Hoc</p>
+    <h3>Hoc Ki II</h3>
+    <p>Thiet Ke Web</p>
+    <p>Xu Ly Anh</p>
+    <button id="btnToggle">Click Thu Gon</button>
+    <script>
+        $(document).ready(function (){
+        $("button").click(function (){
+        $("*P").toggle();
+        if ($("#btnToggle").text()=="Click thu gon") {
+            $("btnToggle").text("Chi Tiet")
+            }else 
+            $("btnToggle").text("Click Thu Gon")
+        });
+        });
+    </script>
+</body>
+</html>
